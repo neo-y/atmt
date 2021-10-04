@@ -1,6 +1,6 @@
 __pycache__/
-*.pyc
-*.pt
+#*.pyc
+#*.pt
 2020/
 tests/
 tutorials/
