@@ -8,7 +8,7 @@ tutorials/
 # files for assignment 3
 train_with_bpe_dropout.py
 lstm_lexical.py
-assignments/03/
+
 
 # files for assignment 4
 assignments/04/
