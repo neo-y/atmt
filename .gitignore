@@ -4,6 +4,7 @@ __pycache__/
 2020/
 tests/
 tutorials/
+TODO.txt
 
 # files for assignment 3
 train_with_bpe_dropout.py
@@ -11,8 +12,6 @@ lstm_lexical.py
 
 
 # files for assignment 4
-assignments/04/
 seq2seq/div_beam.py
-translate_beam.py
 translate_mbr.py
 translate_div_beam.py

@@ -83,6 +83,16 @@ class BeamSearchNode(object):
 
         self.search = search
 
-    def eval(self):
-        """ Returns score of sequence up to this node """
-        return self.logp
+    def eval(self, alpha=0.0):
+        """ Returns score of sequence up to this node 
+
+        params: 
+            :alpha float (default=0.0): hyperparameter for
+            length normalization described in in
+            https://arxiv.org/pdf/1609.08144.pdf (equation
+            14 as lp), default setting of 0.0 has no effect
+        
+        """
+        normalizer = (5 + self.length)**alpha / (5 + 1)**alpha
+        return self.logp / normalizer
+        
